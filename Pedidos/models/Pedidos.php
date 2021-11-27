@@ -1,5 +1,5 @@
 <?php
-         class Pedidos extends Conectar{
+         class Pedidos extends conectar{
 
             public function get_pedidos(){
             $conectar=parent::conexion();
