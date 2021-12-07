@@ -12,8 +12,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 header('Acces-control-Allow-Origin: *');
 header('Content-Type:application/json');
 
-require_once("../config/conexion.php");
-require_once("../models/Articulos.php");
+require_once("../../config/conexion.php");
+require_once("../../Articulos/models/Articulos.php");
 $articulos = new Articulos();
 
 $body = json_decode(file_get_contents("php://input"),true);
